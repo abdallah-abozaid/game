@@ -17,7 +17,7 @@ window.onload = function () {
     result.style.display = "none";
 }
 element.style.height = window.innerHeight + "px";
-const imgesArr = ["/imges/Rock.jfif", "/imges/hand.jpg", "/imges/Scissors.jpg"]
+const imgesArr = ["./imges/Rock.jfif", "./imges/hand.jpg", "./imges/Scissors.jpg"]
 let youChoice=""
 play.onclick = function () {
     result.style.display = "block"
@@ -26,51 +26,51 @@ play.onclick = function () {
     you.src = youChoice;
     if (youChoice == abdChoice) {
        state.innerHTML="تعااادل!!" 
-    } else if (youChoice == "/imges/Rock.jfif" && abdChoice == "/imges/hand.jpg") {
+    } else if (youChoice == "./imges/Rock.jfif" && abdChoice == "./imges/hand.jpg") {
         state.innerHTML = "لقد خسرت ههه !" 
          let value = valueme.innerHTML
         valueme.innerHTML = parseInt(value)+1
-    }else if (abdChoice == "/imges/Rock.jfif" && youChoice == "/imges/hand.jpg") {
+    }else if (abdChoice == "./imges/Rock.jfif" && youChoice == "./imges/hand.jpg") {
         state.innerHTML = "لقد فزت  !"
         let value = valueYou.innerHTML
         valueYou.innerHTML = parseInt(value)+1
-    }else if (youChoice == "/imges/Rock.jfif" && abdChoice == "/imges/Scissors.jpg") {
+    }else if (youChoice == "./imges/Rock.jfif" && abdChoice == "./imges/Scissors.jpg") {
         state.innerHTML = "لقد فزت  !"
          let value = valueYou.innerHTML
         valueYou.innerHTML = parseInt(value)+1
-    }else if (abdChoice == "/imges/Rock.jfif" && youChoice == "/imges/Scissors.jpg") {
+    }else if (abdChoice == "./imges/Rock.jfif" && youChoice == "./imges/Scissors.jpg") {
         state.innerHTML = "لقد خسرت ههه !"
          let value = valueme.innerHTML
         valueme.innerHTML = parseInt(value)+1
-    } else if (youChoice == "/imges/hand.jpg" && abdChoice == "/imges/Rock.jfif ") {
+    } else if (youChoice == "./imges/hand.jpg" && abdChoice == "./imges/Rock.jfif ") {
         state.innerHTML = "لقد فزت  !" 
          let value = valueYou.innerHTML
         valueYou.innerHTML = parseInt(value)+1
-    }else if (abdChoice == "/imges/hand.jpg" && youChoice == "/imges/Rock.jfif ") {
+    }else if (abdChoice == "./imges/hand.jpg" && youChoice == "./imges/Rock.jfif ") {
         state.innerHTML = "لقد خسرت ههه !" 
          let value = valueme.innerHTML
         valueme.innerHTML = parseInt(value)+1
-    }else if (youChoice == "/imges/hand.jpg" && abdChoice == "/imges/Scissors.jpg") {
+    }else if (youChoice == "./imges/hand.jpg" && abdChoice == "./imges/Scissors.jpg") {
         state.innerHTML = "لقد خسرت ههه !"
          let value = valueme.innerHTML
         valueme.innerHTML = parseInt(value)+1
-    }else if (abdChoice == "/imges/hand.jpg" && youChoice == "/imges/Scissors.jpg") {
+    }else if (abdChoice == "./imges/hand.jpg" && youChoice == "./imges/Scissors.jpg") {
         state.innerHTML = "لقد فزت  !"
          let value = valueYou.innerHTML
         valueYou.innerHTML = parseInt(value)+1
-    } else if (youChoice == "/imges/Scissors.jpg" && abdChoice == "/imges/Rock.jfif ") {
+    } else if (youChoice == "./imges/Scissors.jpg" && abdChoice == "./imges/Rock.jfif ") {
         state.innerHTML = "لقد خسرت ههه !" 
          let value = valueme.innerHTML
         valueme.innerHTML = parseInt(value)+1
-    }else if (abdChoice == "/imges/Scissors.jpg" && youChoice == "/imges/Rock.jfif ") {
+    }else if (abdChoice == "./imges/Scissors.jpg" && youChoice == "./imges/Rock.jfif ") {
         state.innerHTML = "لقد فزت  !" 
          let value = valueYou.innerHTML
         valueYou.innerHTML = parseInt(value)+1
-    }else if (youChoice == "/imges/Scissors.jpg" && abdChoice == "/imges/hand.jpg") {
+    }else if (youChoice == "./imges/Scissors.jpg" && abdChoice == "./imges/hand.jpg") {
         state.innerHTML = "لقد فزت  !"
          let value = valueYou.innerHTML
         valueYou.innerHTML = parseInt(value)+1
-    }else if (abdChoice == "/imges/Scissors.jpg" && youChoice == "/imges/hand.jpg") {
+    }else if (abdChoice == "./imges/Scissors.jpg" && youChoice == "./imges/hand.jpg") {
         state.innerHTML = "لقد خسرت ههه !"
          let value = valueme.innerHTML
         valueme.innerHTML = parseInt(value)+1
@@ -89,17 +89,17 @@ tryAgain.onclick = function () {
      bbb.style.display = "block";
 }
 Rock.onclick = function () {
-    youChoice = "/imges/Rock.jfif";
+    youChoice = "./imges/Rock.jfif";
     play.style.display = "block";
     bbb.style.display = "none";
 }
 Paper.onclick = function () {
-    youChoice = "/imges/hand.jpg";
+    youChoice = "./imges/hand.jpg";
     play.style.display = "block";
     bbb.style.display = "none";
 }
 Scissors.onclick = function () {
-    youChoice = "/imges/Scissors.jpg";
+    youChoice = "./imges/Scissors.jpg";
     play.style.display = "block";
     bbb.style.display = "none";
 }
