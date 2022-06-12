@@ -35,6 +35,9 @@ text-align: center;
 .container >div:first-of-type > div:first-of-type{
   width: 30%;
 }
+#result{
+  display: none;
+}
 .container >div:first-of-type > div:nth-of-type(2){
   width: 60%;
 }
