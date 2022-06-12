@@ -1,0 +1,112 @@
+/* -------------------------------------------------start stander */
+*,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--main_body_color);
+  color: var(--text_body_color);
+  perspective: 500;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container >div{
+  padding: 40px;
+  display: flex;
+align-items: center;
+text-align: center;
+}
+.container >div:first-of-type > div:first-of-type{
+  width: 30%;
+}
+.container >div:first-of-type > div:nth-of-type(2){
+  width: 60%;
+}
+.container >div:first-of-type > div:last-of-type{
+  width: 30%;
+}
+.container .flex{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+}
+.container .flex button{
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.container .imgs img{
+width: 200px;
+height: 200px;
+}
+#stateBlock{
+  position: fixed;
+  bottom: 100px;
+}
+#state{
+  transform: scale(2);
+  margin-bottom: 20px;
+}
+#play{
+  display: none;
+}
+#play{
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+  font-size: 22px;
+  height: 80px;
+}
+#tryAgain{
+  width: 100%;
+  background-color:darkgoldenrod;
+  color: white;
+  font-size: 22px;
+  padding: 0 20px;
+}
+#bbb{
+  animation: moving 1.4s ease-in-out alternate infinite;
+}
+.hide{
+  transform: scale(0);
+}
+.text-center{
+  text-align: center;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 40%;
+  background-color:darkslategray;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+@keyframes moving {
+  0%{
+  transform: scale(1);
+  }
+  100%{
+  transform: scale(1.2);
+  }
+}
+/* -------------------------------------------------start my classes */

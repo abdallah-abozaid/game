@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My web Page</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width , initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="game" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+   <div class="container" id="app">
+     <div>
+        <div class="col-2">
+         <img src="/imges/a.jfif" alt="me">
+        <h4>انت</h4>
+        <br>
+        <div id="blockGame">
+          <div id="bbb">
+             <h2 style="text-align: center;margin:15px 0px">أختر أولا</h2>
+         <div class="flex">
+         <div>
+           <button style="background-color:brown;color:wheat" id="Rock">حجر</button>
+         </div>
+         <div><button  style="background-color:azure;color:#000" id="Paper">ورقة</button></div>
+         <div><button style="background-color:darkmagenta;color:whitesmoke" id="Scissors">مقص </button></div>
+       </div>
+          </div>
+       
+       <div class="flex">
+        <button id="play">جاهز ؟ ..... إبدأ </button>
+      </div>
+        </div>
+       
+      </div>
+      <div class="col-8 border">
+        <div id="result" >
+          <div class="flex imgs" >
+          <div><img src="/imges/Rock.jfif" id="you"></div>
+          <div><img src="/imges/Scissors.jpg" id="abd"></div>
+          </div>
+      </div>
+
+      </div>
+      <div class="col-2">
+        <img src="/imges/me.jpg" alt="me">
+        <h4>Abdallah Abu Zaid</h4>
+      </div>
+     </div>
+     <div>
+      <div class="flex">
+        <div id="stateBlock" class="hide">
+          <h1 id="state"></h1>
+          <button id="tryAgain">حاول مرة اخرى</button>
+        </div>
+      </div>
+      <div>
+      </div>
+     </div>
+     <div class="fixed">
+       <div>
+         <span id="valueYou">0</span> : <span  id="valueme">0</span>
+       </div>
+     </div>
+   </div>
+    <script src="js/script.js"></script>
+  
+  </body>
+</html>
